@@ -1,0 +1,11 @@
+version: '2'
+
+volumes:
+    ghost_data: {}
+
+services:
+  ghost:
+    build: ../
+    container_name: ghost
+    ports:
+      - "127.0.0.1:2368:2368"
